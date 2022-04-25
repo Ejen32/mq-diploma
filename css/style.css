@@ -539,7 +539,11 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  
+
+  .subscribe_button:hover {
+    background-color: #323232;
+  }
+
   .subscribe_button_hide {
     position: absolute;
     width: 0px;
@@ -549,10 +553,6 @@
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
-  
-  .subscribe_button:hover {
-    background-color: #323232;
   }
   
   .tags {
@@ -759,7 +759,8 @@
   }
 
   .shop_box {
-    min-width: 347px;
+    max-width: 347px;
+    width: 100%;
     border: 3px solid #b59f5b;
     height: 100%;
   }
@@ -805,7 +806,7 @@
   .shop_box_price {
     display: flex;
     flex-direction: column;
-    min-width: 52px;
+    max-width: 70px;
   }
 
   .shop_box_price1 {
@@ -895,7 +896,7 @@
 
   .shop_box_link {
     height: 49px;
-    min-width: 141px;
+    max-width: 141px;
     background-color: #b59f5b;
     border-style: none;
     font-size: 14px;
@@ -903,6 +904,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Open Sans";
+    flex-basis: 141px;
   }
   
   .subscribe_shop_box_link_hide {
@@ -992,4 +994,218 @@
     color: #999999;
     font-weight: 700;
     text-decoration: none;
+  }
+
+  .popup_ {
+    width: 390px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 999;
+    top: calc(50% - 195px);
+    left: calc(50% - 195px);
+  }
+
+  .mask_popup {
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .popup_title {
+    font-size: 20px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.45;
+    padding-top: 54px;
+  }
+
+  .popup_title::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    display: block;
+  }
+
+  .popup_box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 29px;
+  }
+
+  .popup_text {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+
+  .popup_select_box {
+    width: 331px;
+    height: 50px;
+    position: relative;
+    margin-top: 8px;
+    padding-left: 19px;
+  }
+
+  .popup_select {
+    width: 100%;
+    height: 100%;
+    border: #eeeeee;
+    background-color: #eeeeee;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+
+  .popup_select:focus {
+    width: 331px;
+    height: 50px;
+    background-color: #f4f7f6;
+    border: 1px solid #b59f5b;
+  }
+
+  .popup_form_arrows_img {
+    width: 9px;
+    height: 18px;
+    position: absolute;
+    top: 16px;
+    right: 22px;
+  }
+
+  .popup_radio {
+    margin-top: 33px;
+  }
+
+  .popup_radio_text {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+
+  .popup_radio_box {
+    margin-top: 10px;
+  }
+
+  .popup_radio_box_text {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+
+  .popup_radio_box_text2 {
+    margin-left: 17px;
+  }
+
+  .popup_radio_box_text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .popup_radio_box_input:checked ~ .popup_radio_box_text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../svg/form-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    vertical-align: middle;
+  }
+
+  .popup_radio_box_input {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+  }
+  
+  .popup_unput_themes {
+    margin-top: 38px;
+  }
+
+  .popup_unput_themes_text {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    width: 306px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .popup_unput_themes_field {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    width: 331px;
+    height: 133px;
+    padding-top: 22px;
+    padding-left: 21px;
+    padding-right: 140px;
+    padding-bottom: 97px;
+    background-color: #f4f7f6;
+  }
+
+  .popup_unput_themes_field:focus {
+    width: 331px;
+    height: 133px;
+    background-color: #f4f7f6;
+    border: 1px solid #b59f5b;
+  }
+
+  .popup_button {
+    height: 49px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 54px;
+    background-color: #b59f5b;
+    border-style: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .popup_button:hover {
+    background-color: #323232;
+  }
+
+  .popup_button_hide {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
