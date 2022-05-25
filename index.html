@@ -61,9 +61,11 @@
                   <a class="category_link" href="#">interior</a>
                 </li>
               </ul>
-              <a class="trends_item_text" href="#">
-                Сейчас в тренде: сад на подоконнике
-              </a>
+              <h3 class="trends_item_text_title">
+                <a class="trends_item_text" href="#">
+                  Сейчас в тренде: сад на подоконнике
+                </a>
+              </h3>
             </div>
           </article>
           <article class="trends_item trends_item_img2">
@@ -73,9 +75,11 @@
                   <a class="category_link" href="#">food</a>
                 </li>
               </ul>
-              <a class="trends_item_text" href="#">
-                сыры на красивых картинках из интернета: какие они на вкус?
-              </a>
+              <h3 class="trends_item_text_title">
+                <a class="trends_item_text" href="#">
+                  сыры на красивых картинках из интернета: какие они на вкус?
+                </a>
+              </h3>
             </div>
           </article>
           <article class="trends_item trends_item_img3">
@@ -88,9 +92,11 @@
                   <a class="category_link" href="#">travel</a>
                 </li>
               </ul>
-              <a class="trends_item_text" href="#">
-                СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
-              </a>
+              <h3 class="trends_item_text_title">
+                <a class="trends_item_text" href="#">
+                  СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
+                </a>
+              </h3>
             </div>
           </article>
           <article class="trends_item trends_item_img4">
@@ -103,9 +109,11 @@
                   <a class="category_link" href="#">health</a>
                 </li>
               </ul>
-              <a class="trends_item_text" href="#">
-                Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
-              </a>
+              <h3 class="trends_item_text_title">
+                <a class="trends_item_text" href="#">
+                  Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
+                </a>
+              </h3>
             </div>
           </article>
         </div>
@@ -508,7 +516,12 @@
         <div class="shop_items">
           <article class="shop_item">
             <div class="shop_image">
-              <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+              <picture></picture>
+                <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px)">
+                <source srcset="images/shop-item-desk1.jpg">
+                <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+              </picture>
             </div>
             <div class="shop_box">
               <h3 class="shop_box_title">
@@ -537,7 +550,12 @@
           </article>
           <article class="shop_item">
             <div class="shop_image">
-              <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик">
+              <picture></picture>
+              <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+              <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px)">
+              <source srcset="images/shop-item-desk2.jpg">
+                <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик">
+              </picture>
             </div>
             <div class="shop_box">
               <h3 class="shop_box_title">
@@ -566,7 +584,12 @@
           </article>
           <article class="shop_item">
             <div class="shop_image">
-              <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+              <picture></picture>
+              <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+              <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px)">
+              <source srcset="images/shop-item-desk3.jpg">
+                <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+              </picture>
             </div>
             <div class="shop_box">
               <h3 class="shop_box_title">
@@ -627,9 +650,14 @@
           </a>
         </div>
       </footer>
+
       <!--
       <div class="popup">
         <div class="popup_">
+          <svg class="popup_button_close" alt="Кнопка закрыть" viewBox="0 0 441 441">
+            <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z">
+            </path>
+          </svg>
           <h2 class="popup_title">
             ваш фидбек
           </h2>
@@ -698,5 +726,6 @@
         <div class="mask_popup"></div>
       </div>
       -->
+      
 </body>
 </html>
